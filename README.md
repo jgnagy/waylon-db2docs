@@ -1,13 +1,13 @@
-# Waylon::Jokes
+# Waylon::Db2docs
 
-This is a Skill for the [Waylon Bot Framework](https://github.com/jgnagy/waylon) that enables the bot to tell some jokes. The jokes should be safe for work and are all from https://icanhazdadjoke.com/.
+This is a Skill for the [Waylon Bot Framework](https://github.com/jgnagy/waylon) that the bot lookup Db2 docs from [IBM](https://www.ibm.com/us-en). The documentation all comes from https://www.ibm.com/docs/en/db2. Note that neither this framework nor Skill (including this repo) are in any way affiliated with, sponsored by, or endorsed by IBM.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'waylon-jokes'
+gem 'waylon-db2docs'
 ```
 
 And then execute:
@@ -16,24 +16,22 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install waylon-jokes
+    $ gem install waylon-db2docs
 
 Finally, require the newly installed code in your bot (usually in your `plugins.rb` file under the `# Skills` section):
 
 ```ruby
-require "waylon/jokes"
+require "waylon/db2docs"
 ```
 
 ## Usage
 
-The following skills are available by either direct messaging your bot or by `@` mentioning them:
+The following skills are available by either direct messaging your bot, by `@` mentioning them, or just by mentioning the following pattern(s) in chat:
 
-* `tell me a joke`:
-  * Description: Tells a dad joke
+* `SQLnnnnx`:
+  * Description: Looks up a Db2 SQL error code
   * Parameters: None
   * Permissions: `*`
-  * Alternatives:
-    * `joke`
 
 ## Development
 
@@ -43,7 +41,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jgnagy/waylon-joke.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jgnagy/waylon-db2docs.
 
 ## License
 
