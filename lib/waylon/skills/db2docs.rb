@@ -2,7 +2,7 @@
 
 module Waylon
   module Skills
-    # Lets Waylon tell some jokes
+    # Lets Waylon lookup Db2 docs from IBM's site(s)
     class Db2docs < Waylon::Skill
       IBM_DB2_ERROR_CODE_RANGES_URL = "https://www.ibm.com/docs/en/db2/11.5?topic=messages-sql"
       IBM_DB2_ERROR_DOC_BASE = "https://www.ibm.com/docs/en/SSEPGG_11.5.0/com.ibm.db2.luw.messages.sql.doc"
